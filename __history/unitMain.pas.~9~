@@ -1,0 +1,394 @@
+unit unitMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, strutils;
+
+type
+  TForm2 = class(TForm)
+    Panel1: TPanel;
+    ButtonAc: TButton;
+    ButtonC: TButton;
+    ButtonDividido: TButton;
+    Button07: TButton;
+    Button08: TButton;
+    Button09: TButton;
+    Button06: TButton;
+    Button04: TButton;
+    Button05: TButton;
+    ButtonPonto: TButton;
+    Button00: TButton;
+    ButtonIgual: TButton;
+    ButtonMenos: TButton;
+    ButtonVezes: TButton;
+    Button01: TButton;
+    Button02: TButton;
+    Button03: TButton;
+    ButtonMais: TButton;
+    Panel2: TPanel;
+    Visor: TEdit;
+    procedure Button00Click(Sender: TObject);
+    procedure Button01Click(Sender: TObject);
+    procedure Button02Click(Sender: TObject);
+    procedure Button03Click(Sender: TObject);
+    procedure Button04Click(Sender: TObject);
+    procedure Button05Click(Sender: TObject);
+    procedure Button06Click(Sender: TObject);
+    procedure Button07Click(Sender: TObject);
+    procedure Button08Click(Sender: TObject);
+    procedure Button09Click(Sender: TObject);
+    procedure ButtonPontoClick(Sender: TObject);
+    procedure ButtonMaisClick(Sender: TObject);
+    procedure ButtonMenosClick(Sender: TObject);
+    procedure ButtonVezesClick(Sender: TObject);
+    procedure ButtonDivididoClick(Sender: TObject);
+    procedure ButtonCClick(Sender: TObject);
+    procedure ButtonAcClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure ButtonIgualClick(Sender: TObject);
+    procedure atualizaVisor();
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+  num1: Real;
+  num2: Real;
+  operador: String;
+  valor1: String;
+  valor2: String;
+  parte: Integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.atualizaVisor();
+begin
+  if (parte = 1) then
+    Visor.text := valor1
+  else
+    Visor.text := valor2;
+end;
+
+procedure TForm2.Button00Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '0';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '0';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button01Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '1';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '1';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button02Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '2';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '2';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button03Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '3';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '3';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button04Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '4';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '4';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button05Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '5';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '5';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button06Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '6';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '6';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button07Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '7';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '7';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button08Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '8';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '8';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.Button09Click(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) < 20) then
+    begin
+      valor1 := valor1 + '9';
+    end;
+  end
+
+  else
+  begin
+    if (length(valor2) < 20) then
+    begin
+      valor2 := valor2 + '9';
+    end;
+  end;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.ButtonAcClick(Sender: TObject);
+begin
+  valor1 := '';
+  valor2 := '';
+  parte := 1;
+
+  atualizaVisor();
+end;
+
+procedure TForm2.ButtonCClick(Sender: TObject);
+begin
+  if (parte = 1) then
+    valor1 := ''
+  else
+    valor2 := '';
+
+  atualizaVisor();
+end;
+
+procedure TForm2.ButtonDivididoClick(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) > 0) then
+      parte := 2;
+  end;
+
+  operador := '/';
+end;
+
+procedure TForm2.ButtonIgualClick(Sender: TObject);
+begin
+  if (parte = 2) and (length(valor2) > 0) then
+  begin
+    num1 := strToFloat(valor1);
+    num2 := strToFloat(valor2);
+
+    if (operador = '+') then
+      Visor.text := floatToStr(num1 + num2)
+    else if (operador = '-') then
+      Visor.text := floatToStr(num1 - num2)
+    else if (operador = '*') then
+      Visor.text := floatToStr(num1 * num2)
+    else
+      Visor.text := floatToStr(num1 / num2);
+
+    valor1 := '';
+    valor2 := '';
+    parte := 1;
+  end;
+end;
+
+procedure TForm2.ButtonMaisClick(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) > 0) then
+      parte := 2;
+  end;
+
+  operador := '+';
+end;
+
+procedure TForm2.ButtonMenosClick(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(valor1) > 0) then
+      parte := 2;
+  end;
+
+  operador := '-';
+end;
+
+procedure TForm2.ButtonPontoClick(Sender: TObject);
+begin
+  if (length(Visor.text) < 20) and not(ContainsText(Visor.text, '.')) and (length(Visor.text) > 0) then
+  begin
+    if (parte = 1) then
+      valor1 := valor1 + '.'
+    else
+      valor2 := valor2 + '.';
+
+    atualizaVisor();
+  end;
+end;
+
+procedure TForm2.ButtonVezesClick(Sender: TObject);
+begin
+  if (parte = 1) then
+  begin
+    if (length(Visor.text) > 0) then
+      parte := 2;
+  end;
+
+  operador := '*';
+end;
+
+procedure TForm2.FormShow(Sender: TObject);
+begin
+  parte := 1;
+  valor1 := '';
+  valor2 := '';
+end;
+
+end.

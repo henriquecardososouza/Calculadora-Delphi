@@ -1,0 +1,112 @@
+unit unitMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm2 = class(TForm)
+    Panel1: TPanel;
+    ButtonAc: TButton;
+    ButtonC: TButton;
+    ButtonDividido: TButton;
+    Button07: TButton;
+    Button08: TButton;
+    Button09: TButton;
+    Button06: TButton;
+    Button04: TButton;
+    Button05: TButton;
+    ButtonPonto: TButton;
+    Button00: TButton;
+    ButtonIgual: TButton;
+    ButtonMenos: TButton;
+    ButtonVezes: TButton;
+    Button01: TButton;
+    Button02: TButton;
+    Button03: TButton;
+    ButtonMais: TButton;
+    Panel2: TPanel;
+    Visor: TEdit;
+    procedure Button07Click(Sender: TObject);
+    procedure Button08Click(Sender: TObject);
+    procedure Button09Click(Sender: TObject);
+    procedure Button04Click(Sender: TObject);
+    procedure Button05Click(Sender: TObject);
+    procedure Button06Click(Sender: TObject);
+    procedure Button01Click(Sender: TObject);
+    procedure Button02Click(Sender: TObject);
+    procedure Button03Click(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
+    procedure Button00Click(Sender: TObject);
+    procedure ButtonPontoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button00Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '0';
+end;
+
+procedure TForm2.Button01Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '1';
+end;
+
+procedure TForm2.Button02Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '2';
+end;
+
+procedure TForm2.Button03Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '3';
+end;
+
+procedure TForm2.Button04Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '4';
+end;
+
+procedure TForm2.Button05Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '5';
+end;
+
+procedure TForm2.Button06Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '6';
+end;
+
+procedure TForm2.Button07Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '7';
+end;
+
+procedure TForm2.Button08Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '8';
+end;
+
+procedure TForm2.Button09Click(Sender: TObject);
+begin
+  Visor.text := Visor.text + '9';
+end;
+
+procedure TForm2.ButtonPontoClick(Sender: TObject);
+begin
+  Visor.text := Visor.text + '.';
+end;
+
+end.
